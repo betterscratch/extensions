@@ -1779,7 +1779,7 @@
             }]
         },
         {
-            "slug": "SharkPool/Animation",
+            "slug": "SharkPool/Animations",
             "id": "ANIMAT",
             "name": "Animations",
             "description": "Cool animations for your sprites.",
