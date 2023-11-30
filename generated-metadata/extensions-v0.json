@@ -1768,6 +1768,63 @@
                 "name": "Veggiecan0419",
                 "link": null
             }]
+        },
+        {
+            "slug": "SamuelLouf/Wikipedia",
+            "id": "WIKI",
+            "name": "Wikipedia",
+            "description": "Fetch information from Wikipedia articles.",
+            "by": [{
+                "name": "SamuelLouf",
+                "link": null
+            }]
+        },
+        {
+            "slug": "WheelScroll",
+            "id": "WHLSCL",
+            "name": "Wheel Scroll",
+            "description": "Detect if the user has scrolled.",
+            "image": "images/WheelScroll.svg",
+            "by": [{
+                "name": "Den4ik-12",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Variables-Expanded",
+            "id": "VAREX",
+            "name": "Variables Expanded",
+            "description": "Useful variable blocks.",
+            "image": "images/Monitors-Plus.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Animation",
+            "id": "ANIMAT",
+            "name": "Animations",
+            "description": "Cool animations for your sprites.",
+            "image": "images/Animations.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "UnitConverter",
+            "id": "UNICONV",
+            "name": "Unit Converter",
+            "description": "Easily convert units.",
+            "image": ""
+        },
+        {
+            "slug": "BOP/Twitch",
+            "id": "TWITCH",
+            "name": "Twitch",
+            "description": "Streaming utils for your project.",
+            "image": "images/Twitch.png"
         }
     ]
 }
