@@ -3,7 +3,7 @@
 // Description: Move the visible part of the stage.
 // By: DT
 
-/* generated l10n code */Scratch.translate.setup({"it":{"_Camera (Very Buggy)":"Camera (Presenti Diversi Bug)","_background color":"colore di sfondo","_camera direction":"direzione camera","_camera x":"x camera","_camera y":"y camera","_camera zoom":"zoom camera","_change camera x by [val]":"cambia camera x di [val]","_change camera y by [val]":"cambia camera y di [val]","_change camera zoom by [val]":"cambia zoom camera di [val]","_move camera [val] steps":"sposta camera di [val]passi","_move camera to [sprite]":"sposta la camera dove si trova [sprite]","_no sprites exist":"non ci sono sprite","_point camera towards [sprite]":"punta camera verso [sprite]","_set background color to [val]":"usa colore di sfondo [val]","_set camera direction to [val]":"porta direzione camera a [val]","_set camera to x: [x] y: [y]":"sposta la camera a x: [x] y: [y]","_set camera x to [val]":"porta camera x a [val]","_set camera y to [val]":"porta camera y a [val]","_set camera zoom to [val] %":"porta zoom camera a [val] %","_turn camera [image] [val] degrees":"gira camera [image] di [val] gradi"},"nl":{"_Camera (Very Buggy)":"Camera (Veel Bugs)","_background color":"achtergrondkleur","_camera direction":"camera-richting","_camera x":"camera-x","_camera y":"camera-y","_camera zoom":"camera-zoom","_change camera x by [val]":"verander camera-x met [val]","_change camera y by [val]":"verander camera-y [val]","_change camera zoom by [val]":"verander camera-zoom met [val]","_move camera [val] steps":"verplaats camera [val] stappen","_move camera to [sprite]":"verplaats camera naar [sprite]","_no sprites exist":"...","_point camera towards [sprite]":"richt camera naar [sprite]","_set background color to [val]":"maak achtergrondkleur [val]","_set camera direction to [val]":"richt camera naar [val] graden","_set camera to x: [x] y: [y]":"verplaats camera naar x: [x] y: [y]","_set camera x to [val]":"maak camera-x [val]","_set camera y to [val]":"maak camera-y [val]","_set camera zoom to [val] %":"maak camera-zoom [val] %","_turn camera [image] [val] degrees":"draai camera [image] [val] graden"},"zh-cn":{"_camera direction":"摄像机的方向","_camera x":"摄像机x坐标","_camera y":"摄像机y坐标","_change camera x by [val]":"摄像机的x坐标增加[val]","_change camera y by [val]":"摄像机的y坐标增加[val]","_move camera [val] steps":"摄像机移动[val]步","_move camera to [sprite]":"移动摄像机到角色[sprite]","_set camera direction to [val]":"设置摄像机的方向为[val]","_set camera to x: [x] y: [y]":"设置摄像机的坐标为x[x] y[y]","_set camera x to [val]":"设置摄像机的x坐标为[val]","_set camera y to [val]":"设置摄像机的y坐标为[val]"}});/* end generated l10n code */((Scratch) => {
+((Scratch) => {
   "use strict";
 
   if (!Scratch.extensions.unsandboxed) {
@@ -73,7 +73,7 @@
   // tell resize to update camera as well
   vm.runtime.on("STAGE_SIZE_CHANGED", (_) => updateCamera());
 
-  vm.runtime.on("RUNTIME_DISPOSED", (_) => {
+  vm.runtime.on("PROJECT_LOADED", (_) => {
     cameraX = 0;
     cameraY = 0;
     cameraZoom = 100;
@@ -234,7 +234,7 @@
     getInfo() {
       return {
         id: "DTcameracontrols",
-        name: Scratch.translate("Camera (Very Buggy)"),
+        name: "Camera (Very Buggy)",
 
         color1: "#ff4da7",
         color2: "#de4391",
@@ -246,7 +246,7 @@
           {
             opcode: "moveSteps",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("move camera [val] steps"),
+            text: "move camera [val] steps",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -257,7 +257,7 @@
           {
             opcode: "rotateCW",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("turn camera [image] [val] degrees"),
+            text: "turn camera [image] [val] degrees",
             arguments: {
               image: {
                 type: Scratch.ArgumentType.IMAGE,
@@ -272,7 +272,7 @@
           {
             opcode: "rotateCCW",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("turn camera [image] [val] degrees"),
+            text: "turn camera [image] [val] degrees",
             arguments: {
               image: {
                 type: Scratch.ArgumentType.IMAGE,
@@ -288,7 +288,7 @@
           {
             opcode: "goTo",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("move camera to [sprite]"),
+            text: "move camera to [sprite]",
             arguments: {
               sprite: {
                 type: Scratch.ArgumentType.STRING,
@@ -299,7 +299,7 @@
           {
             opcode: "setBoth",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set camera to x: [x] y: [y]"),
+            text: "set camera to x: [x] y: [y]",
             arguments: {
               x: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -315,7 +315,7 @@
           {
             opcode: "setDirection",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set camera direction to [val]"),
+            text: "set camera direction to [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.ANGLE,
@@ -326,7 +326,7 @@
           {
             opcode: "pointTowards",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("point camera towards [sprite]"),
+            text: "point camera towards [sprite]",
             arguments: {
               sprite: {
                 type: Scratch.ArgumentType.STRING,
@@ -338,7 +338,7 @@
           {
             opcode: "changeX",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("change camera x by [val]"),
+            text: "change camera x by [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -349,7 +349,7 @@
           {
             opcode: "setX",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set camera x to [val]"),
+            text: "set camera x to [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -360,7 +360,7 @@
           {
             opcode: "changeY",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("change camera y by [val]"),
+            text: "change camera y by [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -371,7 +371,7 @@
           {
             opcode: "setY",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set camera y to [val]"),
+            text: "set camera y to [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -383,17 +383,17 @@
           {
             opcode: "getX",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("camera x"),
+            text: "camera x",
           },
           {
             opcode: "getY",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("camera y"),
+            text: "camera y",
           },
           {
             opcode: "getDirection",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("camera direction"),
+            text: "camera direction",
           },
           /*
           // debugging blocks
@@ -410,9 +410,32 @@
           */
           "---",
           {
+            opcode: "blocktx",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "stage to world x: [x]",
+            arguments: {
+              x: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: 100,
+              },
+            },
+          },
+          {
+            opcode: "blockty",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "stage to world y: [y]",
+            arguments: {
+              y: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: 100,
+              },
+            },
+          },
+          "---",
+          {
             opcode: "changeZoom",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("change camera zoom by [val]"),
+            text: "change camera zoom by [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -423,7 +446,7 @@
           {
             opcode: "setZoom",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set camera zoom to [val] %"),
+            text: "set camera zoom to [val] %",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -434,13 +457,13 @@
           {
             opcode: "getZoom",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("camera zoom"),
+            text: "camera zoom",
           },
           "---",
           {
             opcode: "setCol",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set background color to [val]"),
+            text: "set background color to [val]",
             arguments: {
               val: {
                 type: Scratch.ArgumentType.COLOR,
@@ -450,7 +473,7 @@
           {
             opcode: "getCol",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("background color"),
+            text: "background color",
           },
         ],
         menus: {
@@ -475,7 +498,7 @@
         if (e.isOriginal && !e.isStage) sprites.push(e.sprite.name);
       });
       if (sprites.length === 0) {
-        sprites.push(Scratch.translate("no sprites exist"));
+        sprites.push("no sprites exist");
       }
       return sprites;
     }
@@ -542,6 +565,12 @@
     }
     getDirection() {
       return cameraDirection;
+    }
+    blocktx(args) {
+      return _translateX(args.x);
+    }
+    blockty(args) {
+      return _translateY(args.y);
     }
     setCol(args, util) {
       cameraBG = args.val;

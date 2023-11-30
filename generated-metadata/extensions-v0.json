@@ -1237,29 +1237,6 @@
             }]
         },
         {
-            "slug": "DT/cameracontrols",
-            "id": "DTcameracontrols",
-            "name": "Camera Controls (Very Buggy)",
-            "description": "Move the visible part of the stage.",
-            "nameTranslations": {
-                "de": "Kamerakontrolle (Sehr fehlerhaft)",
-                "it": "Controllo Webcam (Ancora Presenti Diversi Bug)",
-                "nl": "Camerabesturing (Veel Bugs)",
-                "zh-cn": "摄像头控制器(有缺陷)"
-            },
-            "descriptionTranslations": {
-                "de": "Bewege den angezeigten Teil der Bühne.",
-                "it": "Sposta la parte visibile dello Stage.",
-                "nl": "Verplaats het zichtbare deel van het speelveld.",
-                "zh-cn": "移动舞台上的可见部分。"
-            },
-            "image": "images/DT/cameracontrols.svg",
-            "by": [{
-                "name": "DT",
-                "link": null
-            }]
-        },
-        {
             "slug": "TheShovel/CanvasEffects",
             "id": "theshovelcanvaseffects",
             "name": "Canvas Effects",
@@ -1740,8 +1717,8 @@
             },
             "image": "images/SharkPool/Spotify.svg",
             "by": [{
-                "name": "ObviousAlexC",
-                "link": "https://scratch.mit.edu/users/pinksheep2917/"
+                "name": "SharkPool",
+                "link": null
             }]
         },
         {
@@ -1825,6 +1802,133 @@
             "name": "Twitch",
             "description": "Streaming utils for your project.",
             "image": "images/Twitch.png"
+        },
+        {
+            "slug": "namelesscat/corsproxy",
+            "id": "CORS",
+            "name": "CORS Proxy",
+            "description": "Bypass CORS on websites. Originally from PenguinMod.",
+            "image": "images/corsproxy.png",
+            "by": [{
+                "name": "NamelessCat",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Tile-Grids",
+            "id": "TILE",
+            "name": "Tile Grids",
+            "description": "Display sprites in grids. Originally from PenguinMod.",
+            "image": "images/SharkPool/Tile-Grids.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Sty-Lists",
+            "id": "STYL",
+            "name": "Sty-Lists",
+            "description": "Change the look of lists. Extremely cool!",
+            "image": "images/SharkPool/Sty-Lists.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Sound-Waves",
+            "id": "SOUNDWAVES",
+            "name": "Sound Waves",
+            "description": "Play ocillators in your project.",
+            "image": "images/SharkPool/Sound-Waves.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/Sprite-Parenting",
+            "id": "PARENT",
+            "name": "Sprite Parenting",
+            "description": "Group sprites together.",
+            "image": "images/SharkPool/Sprite-Parenting.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SamuelLouf/AudioRecording",
+            "id": "AUDREC",
+            "name": "Audio Recording",
+            "description": "Record audio and save to Sounds.",
+            "image": ""
+        },
+        {
+            "slug": "DT/cameracontrols",
+            "id": "CAMDT",
+            "name": "Camera Controls (Very Buggy)",
+            "description": "Move the visible part of the stage.",
+            "image": "images/DT/cameracontrols.svg"
+        },
+        {
+            "slug": "SharkPool/Image-Effects",
+            "id": "IMGEF",
+            "name": "Image Effects",
+            "description": "Apply effects to sprites.",
+            "image": "images/SharkPool/Image-Effects.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "CubesterYT/KeySimulation",
+            "id": "KEYSIM",
+            "name": "Key Simulation",
+            "description": "Simulate keypresses.",
+            "image": "images/KeySimulation.svg",
+            "by": [{
+                "name": "CubesterYT",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/BetterInput",
+            "id": "BETINP",
+            "name": "Better Input",
+            "description": "More input blocks for your projects.",
+            "image": "images/BetterInput.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "NexusKitten/browserutils",
+            "id": "BROWUTIL",
+            "name": "Browser Utils",
+            "description": "Get info about your browser and tab.",
+            "image": ""
+        },
+        {
+            "slug": "turboapi",
+            "id": "TURBOAPI",
+            "name": "TurboAPI",
+            "description": "Send and recieve website POST and GET requests.",
+            "image": "images/turboapi.png"
+        },
+        {
+            "slug": "SharkPool/Recording",
+            "id": "SHAREC",
+            "name": "Recording",
+            "description": "Cool blocks for recording voice.",
+            "image": "images/Recording.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
         }
     ]
 }
