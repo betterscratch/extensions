@@ -1739,7 +1739,7 @@
             "slug": "veggiecan/mobilekeyboard",
             "id": "MOBILEKEY",
             "name": "Mobile Keyboard",
-            "description": "Display an on screen keyboard on mobile devices..",
+            "description": "Display an on screen keyboard on mobile devices.",
             "image": "images/MobileKeyboard.svg",
             "by": [{
                 "name": "Veggiecan0419",
@@ -1877,7 +1877,7 @@
             "id": "IMGEF",
             "name": "Image Effects",
             "description": "Apply effects to sprites.",
-            "image": "images/SharkPool/Image-Effects.svg",
+            "image": "images/Image-Effects.svg",
             "by": [{
                 "name": "SharkPool",
                 "link": null
