@@ -2,11 +2,12 @@
 // ID: skyhigh173JSON
 // Description: Handle JSON strings and arrays.
 // By: Skyhigh173
+// License: MIT
 
 (function (Scratch) {
   "use strict";
   /*
-   * JSON extension v2.5 by skyhigh173 (English Version)
+   * JSON extension v2.6 by skyhigh173
    * Do not remove this comment
    */
 
@@ -18,6 +19,15 @@
     blockType: "label",
     text: text,
   });
+
+  const sampleJSON = {
+    keyval: '{"key":"value"}',
+    mulkeyval: '{"key":"value","key2":"value2"}',
+    list: '["scratch","TurboWarp"]',
+    longList: '["apple","banana","orange"]',
+    intList: "[1,2,3,4]",
+    floatList: "[5.23, 214, 522, 61, 5.24, 62.2, 1, 51212, 0, 0]",
+  };
 
   class JSONS {
     getInfo() {
@@ -34,7 +44,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value"}',
+                defaultValue: sampleJSON.keyval,
               },
             },
           },
@@ -45,7 +55,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value"}',
+                defaultValue: sampleJSON.keyval,
               },
               types: {
                 type: Scratch.ArgumentType.STRING,
@@ -66,7 +76,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value","key2":"value2"}',
+                defaultValue: sampleJSON.mulkeyval,
               },
             },
           },
@@ -94,7 +104,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value"}',
+                defaultValue: sampleJSON.keyval,
               },
             },
           },
@@ -109,7 +119,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["TurboWarp","scratch"]',
+                defaultValue: sampleJSON.list,
               },
             },
           },
@@ -133,6 +143,64 @@
               },
             },
           },
+          "---",
+          {
+            opcode: "json_minify",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "minify [json]",
+            arguments: {
+              json: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: ' {"key" : "value" } ',
+              },
+            },
+          },
+          {
+            opcode: "json_flip",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "flip key-value pair in [json]",
+            arguments: {
+              json: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: sampleJSON.mulkeyval,
+              },
+            },
+          },
+          "---",
+          {
+            opcode: "json_get_path",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "get value by path [path] in [json]",
+            arguments: {
+              path: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: '["key","inner",1]',
+              },
+              json: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: '{"key":{"inner":[true,false]}}',
+              },
+            },
+          },
+          {
+            opcode: "json_set_path",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "set value by path [path] in [json] to [data]",
+            arguments: {
+              path: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: '["key","inner",1]',
+              },
+              json: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: '{"key":{"inner":[true,false]}}',
+              },
+              data: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: 'value'
+              }
+            },
+          },
           makeLabel("JSON Strings"),
           {
             opcode: "json_jlength",
@@ -141,7 +209,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value","key2":"value2"}',
+                defaultValue: sampleJSON.mulkeyval,
               },
             },
           },
@@ -156,7 +224,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value"}',
+                defaultValue: sampleJSON.keyval,
               },
             },
           },
@@ -175,7 +243,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value"}',
+                defaultValue: sampleJSON.keyval,
               },
             },
           },
@@ -190,7 +258,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '{"key":"value","key2":"value2"}',
+                defaultValue: sampleJSON.mulkeyval,
               },
             },
           },
@@ -202,7 +270,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "[1,2,3]",
+                defaultValue: sampleJSON.intList,
               },
             },
           },
@@ -217,7 +285,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["scratch","TurboWarp"]',
+                defaultValue: sampleJSON.list,
               },
             },
           },
@@ -251,7 +319,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["love","heart","follow"]',
+                defaultValue: sampleJSON.longList,
               },
             },
           },
@@ -262,7 +330,7 @@
             arguments: {
               item: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "fav",
+                defaultValue: "pear",
               },
               pos: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -270,7 +338,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["love","follow"]',
+                defaultValue: sampleJSON.longList,
               },
             },
           },
@@ -286,7 +354,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["scratch","a","TurboWarp"]',
+                defaultValue: sampleJSON.longList,
               },
             },
           },
@@ -317,7 +385,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["scratch","TurboWarp"]',
+                defaultValue: sampleJSON.list,
               },
             },
           },
@@ -340,7 +408,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "[1,2,3,4]",
+                defaultValue: sampleJSON.intList,
               },
               item: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -359,7 +427,7 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["a","b","c","d","e","f"]',
+                defaultValue: sampleJSON.intList,
               },
             },
           },
@@ -381,15 +449,15 @@
           {
             opcode: "json_array_concat",
             blockType: Scratch.BlockType.REPORTER,
-            text: "array concat [json] [json2]",
+            text: "concatenate array [json] [json2]",
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["a","b"]',
+                defaultValue: sampleJSON.list,
               },
               json2: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["c","d"]',
+                defaultValue: sampleJSON.longList,
               },
             },
           },
@@ -415,11 +483,35 @@
             arguments: {
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["a","b","c"]',
+                defaultValue: sampleJSON.list,
               },
               len: {
                 type: Scratch.ArgumentType.NUMBER,
-                defaultValue: 2,
+                defaultValue: 1,
+              },
+            },
+          },
+          {
+            // requested by sharkpool, I will improve it when theres lambda function
+            opcode: "json_array_textfilter",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "filter array [list] if text [options] [text] and return [type]",
+            arguments: {
+              list: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: sampleJSON.longList,
+              },
+              options: {
+                type: Scratch.ArgumentType.STRING,
+                menu: "filter_options",
+              },
+              text: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: "e",
+              },
+              type: {
+                type: Scratch.ArgumentType.STRING,
+                menu: "types",
               },
             },
           },
@@ -463,8 +555,7 @@
             arguments: {
               list: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue:
-                  "[5.23, 214, 522, 61, 5.24, 62.2, 1, 51212, 0, 0]",
+                defaultValue: sampleJSON.floatList,
               },
               order: {
                 type: Scratch.ArgumentType.STRING,
@@ -472,7 +563,25 @@
               },
             },
           },
-          makeLabel("Lists"),
+          makeLabel("Variables & Lists"),
+          {
+            opcode: "json_vm_export_var",
+            blockType: Scratch.BlockType.REPORTER,
+            text: "export all variables",
+            disableMonitor: true,
+          },
+          {
+            opcode: "json_vm_import_var",
+            blockType: Scratch.BlockType.COMMAND,
+            text: "import all variables from [json]",
+            arguments: {
+              json: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: '{"my variable": 1}',
+              },
+            },
+          },
+          "---",
           {
             opcode: "json_vm_getlist",
             blockType: Scratch.BlockType.REPORTER,
@@ -495,7 +604,7 @@
               },
               json: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '["apple","banana"]',
+                defaultValue: sampleJSON.longList,
               },
             },
           },
@@ -517,8 +626,11 @@
             items: ["=", "≠"],
           },
           sort_order: {
-            items: ["ascending", "descending"],
             acceptReporters: true,
+            items: ["ascending", "descending"],
+          },
+          filter_options: {
+            items: ["includes", "starts with", "ends with"],
           },
         },
       };
@@ -561,11 +673,6 @@
     json_is_valid({ json }) {
       if (typeof json != "string") {
         return false;
-      } else if (
-        (json.slice(0, 1) != "[" || json.slice(-1) != "]") &&
-        (json.slice(0, 1) != "{" || json.slice(-1) != "}")
-      ) {
-        return false;
       } else {
         try {
           JSON.parse(json);
@@ -576,14 +683,13 @@
       }
     }
 
-    // return object if its json else string
+    /**
+     * Checks if the input is valid JSON or not, then return it
+     * @param {*} json 
+     * @returns {Object|Any}
+     */
     json_valid_return(json) {
       if (typeof json != "string") {
-        return json;
-      } else if (
-        (json.slice(0, 1) != "[" || json.slice(-1) != "]") &&
-        (json.slice(0, 1) != "{" || json.slice(-1) != "}")
-      ) {
         return json;
       } else {
         try {
@@ -603,11 +709,18 @@
             return !Array.isArray(json);
           case "Array":
             return Array.isArray(json);
-          default:
-            return false;
         }
       } catch {
-        return false;
+        // ignore
+      }
+      return false;
+    }
+
+    json_minify({ json }) {
+      try {
+        return JSON.stringify(JSON.parse(json));
+      } catch {
+        return "";
       }
     }
 
@@ -652,6 +765,41 @@
       }
     }
 
+    json_flip({ json }) {
+      try {
+        json = Object.entries(JSON.parse(json));
+        let result = {};
+        let store = (key,val) => {
+          // invalid key
+          if (typeof key === "object") return;
+          if (typeof result[key] == "undefined") {
+            // new key
+            result[key] = val;
+          } else {
+            // multiple key exists
+            if (Array.isArray(result[key])) {
+              result[key] = result[key].push(val);
+            } else {
+              result[key] = [result[key], val];
+            }
+          }
+        };
+        for (const i of json) {
+          if (Array.isArray(i[1])) {
+            // map to different keys
+            for (const key of i[1]) {
+              store(key, i[0]);
+            }
+          } else {
+            store(i[1], i[0]);
+          }
+        }
+        return JSON.stringify(result);
+      } catch {
+        return "";
+      }
+    }
+
     json_equal({ json1, equal, json2 }) {
       try {
         json1 = JSON.parse(json1);
@@ -675,13 +823,11 @@
         json = JSON.parse(json);
         switch (Stype) {
           case "keys":
-            return JSON.stringify(Object.keys(json).map((key) => key));
+            return JSON.stringify(Object.keys(json));
           case "values":
-            return JSON.stringify(Object.keys(json).map((key) => json[key]));
+            return JSON.stringify(Object.values(json));
           case "datas":
-            return JSON.stringify(
-              Object.keys(json).map((key) => [key, json[key]])
-            );
+            return JSON.stringify(Object.entries(json));
           default:
             return "";
         }
@@ -742,21 +888,67 @@
       return this.json_length({ json: json });
     }
 
+    json_get_path({ path, json }) {
+      try {
+        path = JSON.parse(path);
+        json = JSON.parse(json);
+        for (let key of path) {
+          if (Array.isArray(json)) {
+            if (key == 0) return "";
+            if (key > 0) key--;
+            key += key < 0 ? json.length : 0;
+            if (key >= json.length || key < 0) return "";
+          }
+          json = json[key];
+        }
+        if (typeof json == "object") {
+          return JSON.stringify(json);
+        } else {
+          return json;
+        }
+      } catch {
+        return "";
+      }
+    }
+
+    json_set_path({ path, json, data }) {
+      try {
+        path = JSON.parse(path);
+        json = JSON.parse(json);
+        let obj = json;
+        data = this.json_valid_return(data);
+        let count = path.length;
+        for (let key of path) {
+          if (Array.isArray(obj)) {
+            if (key == 0) return "";
+            if (key > 0) key--;
+            key += key < 0 ? obj.length : 0;
+            if (key >= obj.length || key < 0) return "";
+          }
+          count--;
+          if (count == 0) {
+            obj[key] = data;
+          } else {
+            obj = obj[key];
+          }
+        }
+        return JSON.stringify(json);
+      } catch {
+        return "";
+      }
+    }
+
     json_array_get({ item, json }) {
       // 1...length : array content, -1...-length : reverse array content, 0 : ERROR
       try {
+        json = JSON.parse(json);
         item = Scratch.Cast.toNumber(item);
         if (item == 0) return "";
-        if (item > 0) {
-          item--;
-        }
-        json = JSON.parse(json);
-        let result;
-        if (item >= 0) {
-          result = json[item];
-        } else {
-          result = json[json.length + item];
-        }
+        if (item > 0) item--;
+        item += item < 0 ? json.length : 0;
+        if (item >= json.length || item < 0) return "";
+
+        let result = json[item];
         if (typeof result == "object") {
           return JSON.stringify(result);
         } else {
@@ -950,6 +1142,48 @@
       return "";
     }
 
+    json_array_textfilter(args) {
+      try {
+        const option = args.options;
+        let list = JSON.parse(args.list);
+        // check type
+        const isArray = Array.isArray(list);
+        // [[0, a], [1, b], [2, c]]
+        list = Object.entries(list);
+        const text = Scratch.Cast.toString(args.text);
+        const out = args.type;
+
+        switch (option) {
+          case "includes":
+            list = list.filter(
+              (x) => typeof x[1] === "string" && x[1].includes(text)
+            );
+            break;
+          case "starts with":
+            list = list.filter(
+              (x) => typeof x[1] === "string" && x[1].startsWith(text)
+            );
+            break;
+          case "ends with":
+            list = list.filter(
+              (x) => typeof x[1] === "string" && x[1].endsWith(text)
+            );
+            break;
+          default:
+            return ""; // shouldn't happen
+        }
+        if (out === "Object") {
+          // if array, convert to scratch index
+          if (isArray) list = list.map(([k, v]) => [Number(k) + 1, v]);
+          return JSON.stringify(Object.fromEntries(list));
+        }
+        if (out === "Array") return JSON.stringify(list.map((x) => x[1]));
+      } catch {
+        // ignore
+      }
+      return "";
+    }
+
     json_array_sort(args) {
       let list;
       try {
@@ -957,12 +1191,33 @@
       } catch {
         return "";
       }
-      if (!Array.isArray(list)) {
-        return "";
-      }
+      if (!Array.isArray(list)) return "";
+
       list.sort(Scratch.Cast.compare);
       if (args.order === "descending") list.reverse();
       return JSON.stringify(list);
+    }
+
+    json_vm_export_var(_, util) {
+      const getVariables = (x) =>
+        Object.fromEntries(
+          Object.values(x.variables)
+            .filter((x) => x.type === "")
+            .map((x) => [x.name, x.value])
+        );
+
+      const global = getVariables(vm.runtime.getTargetForStage());
+      const local = getVariables(util.target);
+      return JSON.stringify({ ...global, ...local });
+    }
+
+    json_vm_import_var({ json }, util) {
+      try {
+        json = JSON.parse(json);
+        Object.entries(json).forEach(([k, v]) => {
+          util.target.lookupVariableByNameAndType(k, "").value = v;
+        });
+      } catch {}
     }
   }
   Scratch.extensions.register(new JSONS());

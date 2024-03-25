@@ -1929,6 +1929,49 @@
                 "name": "SharkPool",
                 "link": null
             }]
+        },
+        {
+            "slug": "qxsk/lazy-music",
+            "id": "LAZYMUS",
+            "name": "Lazy Music",
+            "description": "Import sounds from URLs.",
+            "image": ""
+        },
+        {
+            "slug": "David-Orangemoon/penPlus",
+            "id": "penP7",
+            "name": "Pen Plus V7",
+            "description": "Advanced rendering capabilities.",
+            "image": "images/obviousAlexC/penPlus.svg"
+        },
+        {
+            "slug": "indexeddb",
+            "id": "indexeddb",
+            "name": "Indexed Database",
+            "description": "Advanced local database capabilities.",
+            "image": "images/IndexedDB.svg"
+        },
+        {
+            "slug": "SharkPool/PauseUtils",
+            "id": "PAUSEPROJ",
+            "name": "Pause Utilities",
+            "description": "Pause the project, a sprite or a sprite with a specific variable",
+            "image": "images/SharkPool/PauseUtils.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
+        },
+        {
+            "slug": "SharkPool/SpeechBubbles",
+            "id": "SPEECHBUBBLES",
+            "name": "Customizable Speech Bubbles",
+            "description": "Speech bubbles are bland, make them look good with this extension.",
+            "image": "images/SharkPool/SpeechBubbles.svg",
+            "by": [{
+                "name": "SharkPool",
+                "link": null
+            }]
         }
     ]
 }
