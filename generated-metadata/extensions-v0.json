@@ -1973,5 +1973,17 @@
                 "link": null
             }]
         }
+        ,
+        {
+            "slug": "penguingpt",
+            "id": "PENGUINGPT",
+            "name": "PenguinGPT",
+            "description": "Use the ChatGPT API to get responses in Better Scratch!",
+            "image": "",
+            "by": [{
+                "name": "LOLEMO, Anonymous_cat1, MubiLop",
+                "link": null
+            }]
+        }
     ]
 }
