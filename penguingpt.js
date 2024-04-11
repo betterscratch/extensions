@@ -56,7 +56,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                         arguments: {
                             URL: {
                                 type: Scratch.ArgumentType.STRING,
-                                defaultValue: 'http://web.archive.org/web/20240325065658/https://reverse.mubi.tech/v1/chat/completions'
+                                defaultValue: 'https://reverse.mubi.tech/v1/chat/completions'
                             }
                         },
                     },
@@ -428,12 +428,12 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
         moderate(args) {
             const prompt = args.PROMPT;
 
-            return Scratch.fetch(`http://web.archive.org/web/20240325065658/https://reverse.mubi.tech/v1/moderations`, {
+            return Scratch.fetch(`https://reverse.mubi.tech/v1/moderations`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Origin': 'http://web.archive.org/web/20240325065658/https://gptcall.net/',
-                        'Referer': 'http://web.archive.org/web/20240325065658/https://gptcall.net/'
+                        'Origin': 'https://gptcall.net/',
+                        'Referer': 'https://gptcall.net/'
                     },
                     body: JSON.stringify({
                         input: prompt,
@@ -461,8 +461,8 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Origin': 'http://web.archive.org/web/20240325065658/https://gptcall.net/',
-                        'Referer': 'http://web.archive.org/web/20240325065658/https://gptcall.net/'
+                        'Origin': 'https://gptcall.net/',
+                        'Referer': 'https://gptcall.net/'
                     },
                     body: JSON.stringify({
                         model: this.model,
@@ -508,8 +508,8 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Origin': 'http://web.archive.org/web/20240325065658/https://gptcall.net/',
-                        'Referer': 'http://web.archive.org/web/20240325065658/https://gptcall.net/'
+                        'Origin': 'https://gptcall.net/',
+                        'Referer': 'https://gptcall.net/'
                     },
                     body: JSON.stringify({
                         model: "gpt-3.5-turbo",
@@ -536,8 +536,8 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Origin': 'http://web.archive.org/web/20240325065658/https://gptcall.net/',
-                        'Referer': 'http://web.archive.org/web/20240325065658/https://gptcall.net/'
+                        'Origin': 'https://gptcall.net/',
+                        'Referer': 'https://gptcall.net/'
                     },
                     body: JSON.stringify({
                         model: this.model,
@@ -567,7 +567,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
             const prompt = args.PROMPT;
             const requestedModel = args.MODEL
 
-            return Scratch.fetch("http://web.archive.org/web/20240325065658/https://reverse.mubi.tech/image/generate", {
+            return Scratch.fetch("https://reverse.mubi.tech/image/generate", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -602,7 +602,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
             const requestedModel = args.MODEL
             const Name = args.NAME || `AIGenerated_${prompt}`;
 
-            return Scratch.fetch("http://web.archive.org/web/20240325065658/https://reverse.mubi.tech/image/generate", {
+            return Scratch.fetch("https://reverse.mubi.tech/image/generate", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -751,8 +751,8 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Origin': 'http://web.archive.org/web/20240325065658/https://gptcall.net/',
-                        'Referer': 'http://web.archive.org/web/20240325065658/https://gptcall.net/'
+                        'Origin': 'https://gptcall.net/',
+                        'Referer': 'https://gptcall.net/'
                     },
                     body: JSON.stringify({
                         model: this.model,
