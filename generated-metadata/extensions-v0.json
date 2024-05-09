@@ -2271,4 +2271,13 @@
         ],
         "tags": "betterscratch"
     }
+    ,
+    {
+        "slug": "cloudEncoding",
+        "id": "CLOUDENC",
+        "name": "Cloud Encoding",
+        "description": "Encode strings to numbers, for cloud variables.",
+        "image": "",
+        "tags": "betterscratch"
+    }
 ]
