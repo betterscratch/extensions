@@ -2279,5 +2279,19 @@
         "description": "Encode strings to numbers, for cloud variables.",
         "image": "",
         "tags": "betterscratch"
+    },
+    {
+        "slug": "techguy16/nfcplus",
+        "id": "techguy16nfcplus",
+        "name": "NFCPlus",
+        "description": "Allows reading data from NFC (NDEF) devices. Works in Chrome, Opera and Samsung Internet on Android.",
+        "image": "images/Alestore/nfcwarp.svg",
+        "by": [
+            {
+                "name": "techguy16",
+                "link": "https://github.com/techguy16"
+            }
+        ],
+        "tags": "betterscratch"
     }
 ]
