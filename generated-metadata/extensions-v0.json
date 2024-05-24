@@ -2293,5 +2293,19 @@
             }
         ],
         "tags": "betterscratch"
+    },
+    {
+        "slug": "Xeltalliv/simple3D",
+        "id": "xeltallivsimple3d",
+        "name": "Simple 3D",
+        "description": "Make GPU accelerated 3D projects easily.",
+        "image": "images/Xeltalliv/simple3D.png",
+        "by": [
+            {
+                "name": "Vadik1",
+                "link": "https://scratch.mit.edu/users/Vadik1/"
+            }
+        ],
+        "tags": "tw"
     }
 ]
