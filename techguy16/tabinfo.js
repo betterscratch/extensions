@@ -1,27 +1,38 @@
-(async function () {
-    const getTabSize = () => {
-        const tabWidth = window.innerWidth;
-        const tabHeight = window.innerHeight;
-        return [tabWidth, tabHeight];
-    };
+(function (Scratch) {
+  'use strict';
 
-    const descriptor = {
+  if (!Scratch.extensions.unsandboxed) {
+    throw new Error('This Tab Size extension must run unsandboxed');
+  }
+
+  class TabInfo {
+    getInfo() {
+      return {
+        id: 'tabinfo',
+        name: 'Tab Info',
         blocks: [
-            ['R', 'Tab Width', 'getTabWidth'],
-            ['R', 'Tab Height', 'getTabHeight']
+          {
+            opcode: 'getTabWidth',
+            blockType: Scratch.BlockType.REPORTER,
+            text: 'tab width'
+          },
+          {
+            opcode: 'getTabHeight',
+            blockType: Scratch.BlockType.REPORTER,
+            text: 'tab height'
+          }
         ],
-        menus: {},
-        url: 'https://github.com/techguy16'
-    };
+      };
+    }
 
-    Scratch.extensions.register('Tab Info', descriptor, {
-        getTabWidth: function (callback) {
-            const [tabWidth] = getTabSize();
-            callback(tabWidth);
-        },
-        getTabHeight: function (callback) {
-            const [, tabHeight] = getTabSize();
-            callback(tabHeight);
-        }
-    });
-})();
+    getTabWidth(args, callback) {
+      return window.innerWidth;
+    }
+
+    getTabHeight(args, callback) {
+      return window.innerHeight;
+    }
+  }
+
+  Scratch.extensions.register(new TabInfo());
+})(Scratch);
