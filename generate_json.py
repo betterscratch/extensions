@@ -37,7 +37,7 @@ for ext in tw:
             with open(ext["image"], "wb") as f:
                 f.write(image_content)
            
-    if not "McUtils" in ext["slug"]:   
+    if not "McUtils" in ext["slug"] and not is_current_extension(ext["slug"]):   
         tmp = ext
         tmp["tag"] = "tw"
         current["extensions"].append(tmp)
