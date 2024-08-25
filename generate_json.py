@@ -39,7 +39,7 @@ for ext in tw:
            
     if not "McUtils" in ext["slug"] and not is_current_extension(ext["slug"]):   
         tmp = ext
-        tmp["tag"] = "tw"
+        tmp["tags"] = "tw"
         current["extensions"].append(tmp)
     
 with open("generated-metadata/1.4.0.json", "w") as w:

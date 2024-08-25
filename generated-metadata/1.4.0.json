@@ -2346,7 +2346,7 @@
                     "link": "https://scratch.mit.edu/users/LilyMakesThings/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "XmerOriginals/closecontrol",
@@ -2382,7 +2382,7 @@
                     "link": "https://scratch.mit.edu/users/XmerOriginals/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "PwLDev/vibration",
@@ -2414,7 +2414,7 @@
                     "link": "https://scratch.mit.edu/users/PwLDev/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "Lily/Assets",
@@ -2448,7 +2448,7 @@
                 "zh-cn": "\u6dfb\u52a0\u3001\u5220\u9664\u548c\u83b7\u53d6\u5404\u79cd\u8d44\u6e90\u6570\u636e\u3002"
             },
             "image": "images/Lily/Assets.svg",
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "SharkPool/Font-Manager",
@@ -2488,7 +2488,7 @@
                     "link": "https://scratch.mit.edu/users/0znzw/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "mbw/xml",
@@ -2514,7 +2514,7 @@
                     "link": "https://scratch.mit.edu/users/mybearworld/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "numerical-encoding-2",
@@ -2543,7 +2543,7 @@
                 "zh-cn": "\u5c06\u5b57\u7b26\u4e32\u7f16\u7801\u4e3a\u4e91\u53d8\u91cf\u7684\u6570\u5b57\u3002\u7531\u4e8e\u4f7f\u7528\u4e86\u66f4\u9ad8\u6548\u7684\u683c\u5f0f\uff0c\u4e0e V1 \u4e0d\u517c\u5bb9\u3002"
             },
             "image": "images/numerical-encoding-2.svg",
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "CST1229/images",
@@ -2582,7 +2582,7 @@
                     "link": "https://scratch.mit.edu/users/CST1229/"
                 }
             ],
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "steamworks",
@@ -2596,7 +2596,7 @@
                 "zh-cn": "\u5c06\u4f60\u7684\u9879\u76ee\u8fde\u63a5\u5230 Steamworks API\u3002"
             },
             "docs": true,
-            "tag": "tw"
+            "tags": "tw"
         },
         {
             "slug": "SharkPool/Tune-Shark-V3",
