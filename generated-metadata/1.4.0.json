@@ -2597,6 +2597,20 @@
             },
             "docs": true,
             "tag": "tw"
+        },
+        {
+            "slug": "SharkPool/Tune-Shark-V3",
+            "id": "SPtuneSharkV3",
+            "name": "Tune Shark V3",
+            "description": "Advanced Audio Engine, giving Complex Sound Control",
+            "image": "images/SharkPool/Tune-Shark-V3.svg",
+            "by": [
+                {
+                    "name": "SharkPool",
+                    "link": null
+                }
+            ],
+            "tags": "betterscratch"
         }
     ]
 }
